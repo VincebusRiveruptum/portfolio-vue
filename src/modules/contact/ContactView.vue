@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view />
+  <h1>Contact view!...</h1>
 </template>
-
-<style scoped></style>
