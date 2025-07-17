@@ -4,23 +4,31 @@ import AppNavlink from "@/components/shared/AppNavlink.vue";
 </script>
 <template>
   <div
-    class="flex flex-row bg-white items-center gap-4 justify-between h-[100px] relative shadow-xl py-2 px-[4%]"
+    class="flex flex-row bg-white items-center gap-4 justify-between h-[90px] relative shadow-xl py-2 px-[8%]"
   >
     <div class="flex flex-row">
-      <img class="w-16 aspect-square" :src="logo" alt="vincebus-logo" />
+      <img class="w-14 aspect-square" :src="logo" alt="vincebus-logo" />
     </div>
 
-    <div class="flex flex-row">
-      <AppNavlinkNavLink title="Home" type="scroll" />
-      <AppNavlinkNavLink title="Personal Information" type="scroll" />
-      <AppNavlinkNavLink title="Skills" type="scroll" />
-      <AppNavlinkNavLink title="Experience" type="scroll" />
-      <AppNavlinkNavLink title="Projects" type="scroll" />
-      <AppNavlinkNavLink
-        title="Contact"
-        type="route"
-        :to="{ name: 'contact' }"
+    <div class="flex flex-row gap-8">
+      <AppNavlink title="Home" type="scroll" :to="{ name: 'landing-page' }" />
+      <AppNavlink
+        title="Personal Information"
+        type="scroll"
+        :to="{ name: 'landing-page' }"
       />
+      <AppNavlink title="Skills" type="scroll" :to="{ name: 'landing-page' }" />
+      <AppNavlink
+        title="Experience"
+        type="scroll"
+        :to="{ name: 'landing-page' }"
+      />
+      <AppNavlink
+        title="Projects"
+        type="scroll"
+        :to="{ name: 'landing-page' }"
+      />
+      <AppNavlink title="Contact" type="route" :to="{ name: 'contact-view' }" />
     </div>
   </div>
 </template>

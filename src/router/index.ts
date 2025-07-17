@@ -1,6 +1,10 @@
-import { createMemoryHistory, createRouter, type RouteMeta } from "vue-router";
+import {
+  createMemoryHistory,
+  createRouter,
+  type RouteRecordRaw,
+} from "vue-router";
 
-export const routes = [
+export const routes: RouteRecordRaw[] = [
   {
     path: "",
     redirect: { name: "landing-page" },
