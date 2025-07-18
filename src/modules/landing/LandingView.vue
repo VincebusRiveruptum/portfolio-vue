@@ -1,5 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MeSection from "./components/MeSection.vue";
+import PersonalInfoSection from "./components/PersonalInfoSection.vue";
+import SkillsSection from "./components/SkillsSection.vue";
+</script>
 
 <template>
-  <div class="font-bold text-2xl">Sup</div>
+  <div class="h-full flex flex-col">
+    <MeSection />
+    <PersonalInfoSection />
+    <SkillsSection />
+  </div>
 </template>

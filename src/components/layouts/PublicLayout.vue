@@ -5,7 +5,7 @@ import AppNavbar from '@/components/shared/AppNavbar.vue';
 <template>
   <div class="flex flex-col h-screen overflow-clip">
     <AppNavbar />
-    <div class="flex flex-col h-full overvlow-scroll">
+    <div class="flex flex-col h-full overflow-scroll">
       <router-view />
     </div>
   </div>

@@ -1,1 +1,29 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  @apply antialiased;
+}
+
+.btn-primary {
+  @apply px-4 py-2 text-white antialiased rounded-full bg-rose-600 hover:brightness-105 hover:scale-105 hover:shadow-sm transition-all;
+}
+
+h1 {
+  @apply text-4xl font-extrabold antialiased;
+}
+
+h2 {
+  @apply text-2xl font-bold antialiased;
+}
+
+h3 {
+  @apply text-xl font-bold antialiased;
+}
+
+ul li {
+  @apply list-disc list-inside;
+}
