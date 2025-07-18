@@ -1,0 +1,25 @@
+<script setup lang="ts">
+import logoWhite from "@/assets/logo_white.png";
+</script>
+
+<template>
+  <div
+    class="flex flex-row justify-between gap-8 px-[4%] py-[2%] w-full h-[500px] bg-slate-900 text-white"
+  >
+    <div class="flex flex-row items-center gap-4">
+      <img :src="logoWhite" alt="vincebus-logo" class="aspect-square w-20" />
+      <h3>Vincebus</h3>
+    </div>
+
+    <div class="flex flex-row items-center">
+      <p>
+        (c) {{ new Date().getFullYear() }} - Vincebus Riveruptum, All rights
+        reserved.
+      </p>
+    </div>
+
+    <div class="flex flex-row items-center">
+      <a>Back to top</a>
+    </div>
+  </div>
+</template>

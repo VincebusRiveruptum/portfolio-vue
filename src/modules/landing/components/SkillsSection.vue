@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex flex-col gap-8 bg-gray-100 px-4 sm:py-[5%] sm:px-[15%]">
-    <h1>Skills</h1>
+    <h1>Skills</h1> 
 
     <h3>Web dev.</h3>
     <ul>
