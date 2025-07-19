@@ -24,6 +24,10 @@ h3 {
   @apply text-xl font-bold antialiased;
 }
 
+h3 {
+  @apply text-lg font-bold antialiased text-black/50;
+}
+
 ul li {
   @apply list-disc list-inside;
 }
