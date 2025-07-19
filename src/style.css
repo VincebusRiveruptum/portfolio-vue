@@ -1,10 +1,15 @@
 @import "tailwindcss";
 @plugin "tailwindcss-motion";
 
+html{
+  font-size: 90%;
+}
 * {
+  /*
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  */
   @apply antialiased;
 }
 

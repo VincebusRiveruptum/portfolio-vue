@@ -9,6 +9,7 @@ import ProjectItem from "../ProjectItem.vue";
       :key="'project' + i"
       :title="project?.title"
       :description="project?.description"
+      :tech-stack="project?.techStack"
     />
   </div>
 </template>
