@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import ExpSection from "./components/ExpSection.vue";
-import MeSection from "./components/MeSection.vue";
-import PersonalInfoSection from "./components/PersonalInfoSection.vue";
-import SkillsSection from "./components/SkillsSection.vue";
+import ExpSection from "./components/sections/ExpSection.vue";
+import MeSection from "./components/sections/MeSection.vue";
+import PersonalInfoSection from "./components/sections/PersonalInfoSection.vue";
+import ProjectsSection from "./components/sections/ProjectsSection.vue";
+import SkillsSection from "./components/sections/SkillsSection.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import SkillsSection from "./components/SkillsSection.vue";
     <PersonalInfoSection />
     <SkillsSection />
     <ExpSection />
+    <ProjectsSection/>
   </div>
 </template>
