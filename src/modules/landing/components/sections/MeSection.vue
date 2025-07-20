@@ -30,8 +30,14 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
         </p>
       </div>
       <div class="flex flex-row items-center gap-8">
-        <GithubIcon class="hover:scale-110 transition-all" />
-        <LinkedinIcon class="hover:scale-110 transition-all" />
+        <a href="https://github.com/VincebusRiveruptum">
+          <GithubIcon class="hover:scale-110 transition-all" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vicente-ignacio-riveros-garay-5a545925b/"
+        >
+          <LinkedinIcon class="hover:scale-110 transition-all" />
+        </a>
       </div>
 
       <button class="btn-primary">Contact me</button>

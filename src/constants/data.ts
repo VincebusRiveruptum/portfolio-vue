@@ -1,7 +1,7 @@
 import { CheckIcon, ConstructionIcon, PauseIcon } from "lucide-vue-next";
 import type { Tech } from "../types/global";
 
-import github from "@/assets/github.svg";
+import git from "@/assets/git.svg";
 import laravel from "@/assets/laravel.png";
 import tailwindcss from "@/assets/tailwindcss.png";
 import php from "@/assets/php.svg";
@@ -16,6 +16,11 @@ import msdos from "@/assets/msdos.png";
 import csharp from "@/assets/csharp.svg";
 import axios from "@/assets/axios.ico";
 import dotnet from "@/assets/net.png";
+import javascript from "@/assets/javascript.svg";
+import typescript from "@/assets/typescript.svg";
+import vuequery from "@/assets/vuequery.png";
+import postman from "@/assets/postman.png";
+import mysql from "@/assets/mysql.svg";
 
 const techs: Tech[] = [
   {
@@ -23,7 +28,7 @@ const techs: Tech[] = [
     name: "git",
     longName: "Git",
     uri: "https://github.com/",
-    icon: github,
+    icon: git,
     logo: undefined,
   },
   {
@@ -193,6 +198,46 @@ const techs: Tech[] = [
     longName: ".NET WPF",
     uri: "https://visualstudio.microsoft.com/es/vs/features/wpf/",
     icon: dotnet,
+    logo: undefined,
+  },
+  {
+    id: 23,
+    name: "typescript",
+    longName: "Typescript",
+    uri: "https://www.typescriptlang.org/",
+    icon: typescript,
+    logo: undefined,
+  },
+  {
+    id: 24,
+    name: "javascript",
+    longName: "Javascript",
+    uri: "https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/What_is_JavaScript",
+    icon: javascript,
+    logo: undefined,
+  },
+  {
+    id: 25,
+    name: "postman",
+    longName: "Postman",
+    uri: "https://www.postman.com/downloads/",
+    icon: postman,
+    logo: undefined,
+  },
+  {
+    id: 26,
+    name: "vuequery",
+    longName: "Tanstack VueQuery",
+    uri: "https://tanstack.com/query/latest/docs/framework/vue/overview",
+    icon: vuequery,
+    logo: undefined,
+  },
+  {
+    id: 27,
+    name: "mysql",
+    longName: "MySQL",
+    uri: "https://www.mysql.com/",
+    icon: mysql,
     logo: undefined,
   },
 ];
