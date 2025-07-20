@@ -10,6 +10,7 @@ export type Tech = {
 };
 
 export type ContactForm = {
-  subject?: string;
+  email: string;
+  subject: string;
   body: string;
 };

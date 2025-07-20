@@ -7,34 +7,37 @@ import { router } from "../../../router";
 
 const setForm = () => {
   return {
+    email: "",
     subject: "",
-    body: "",
+    message: "",
   };
 };
 
 const useContact = () => {
   const isError = ref<boolean | undefined>();
   const isPending = ref<boolean | undefined>();
+  const isSuccess = ref<boolean | undefined>();
   const form = ref<ContactForm>(setForm());
 
   const isFormFilled = computed(
     () =>
       form.value.subject &&
       form.value.subject.trim() != "" &&
-      form.value.body &&
-      form.value.body.trim() != ""
+      form.value.message &&
+      form.value.message.trim() != ""
   );
 
   const sendMessage = async () => {
     try {
       isPending.value = true;
-      await emailjs.sendForm(serviceId, templateId, form.value.body, options);
+      await emailjs.send(serviceId, templateId, form.value, options);
       await Swal.fire({
         icon: "success",
         title: "Success",
         text: "Message delivered!",
         timer: 3000,
       });
+      isSuccess.value = true;
       router.push({ name: "landing-page" });
     } catch (err) {
       isError.value = true;
@@ -55,6 +58,7 @@ const useContact = () => {
     isFormFilled,
     isError,
     isPending,
+    isSuccess,
 
     sendMessage,
   };
