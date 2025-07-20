@@ -7,7 +7,7 @@ import AppFooter from "@/components/shared/AppFooter.vue";
   <div class="flex flex-col h-screen overflow-clip">
     <AppNavbar />
     <div class="flex flex-col h-full overflow-auto">
-      <div>
+      <div class="grow">
         <router-view />
       </div>
       <AppFooter />

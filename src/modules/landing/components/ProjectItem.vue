@@ -8,16 +8,20 @@ const props = defineProps<{
   pictures?: Array;
   title: string;
   description: string;
+  background?: string;
   techStack?: Tech[];
 }>();
 </script>
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-    <div class="rounded-xl shadow-xl w-[80%] aspect-square">
+    <div
+      class="rounded-xl shadow-xl w-[80%] aspect-square"
+      :class="[props.background]"
+    >
       <img
         :src="props?.pictures ? props?.pictures[0] : placeholder"
-        class="object-cover w-full h-full"
+        class="w-full h-full object-contain"
       />
     </div>
 

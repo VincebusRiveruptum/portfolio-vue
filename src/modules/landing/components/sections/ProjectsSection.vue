@@ -12,6 +12,8 @@ import ProjectItem from "../ProjectItem.vue";
         :title="project?.title"
         :description="project?.description"
         :tech-stack="project?.techStack"
+        :pictures="project?.pictures"
+        :background="project?.background"
       />
     </div>
   </div>

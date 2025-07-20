@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "tailwindcss-motion";
 
-html{
+html {
   font-size: 90%;
 }
 * {
@@ -14,7 +14,16 @@ html{
 }
 
 .btn-primary {
-  @apply px-4 py-2 text-white antialiased rounded-full bg-rose-600 hover:brightness-105 hover:scale-105 hover:shadow-sm transition-all;
+  @apply px-4 py-2 text-white antialiased rounded-full bg-rose-600 hover:brightness-105 hover:scale-105 hover:shadow-sm transition-all disabled:bg-rose-600/30 disabled:hover:scale-100;
+}
+
+input,
+textarea {
+  @apply border-1 rounded-lg antialiased border-black/50 p-2;
+}
+
+textarea {
+  @apply min-h-[200px];
 }
 
 h1 {

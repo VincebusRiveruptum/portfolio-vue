@@ -294,6 +294,11 @@ const projects = [
     description: "SaaS for medical records management.",
     uri: "",
     techStack: [techs[14], techs[8], techs[3], techs[6]],
+    background: "bg-[#00C6BE]",
+    pictures: [
+      "src/assets/projects/passmed-logo.svg",
+      "src/assets/projects/passmed.png",
+    ],
   },
   {
     title: "Lupobenchmark",
@@ -308,6 +313,7 @@ const projects = [
     description: "Text-mode tetris for MS-DOS, just for experimental purposes!",
     uri: "",
     techStack: [techs[18], techs[19]],
+    pictures: ["src/assets/projects/tetris.png"],
   },
 
   {
@@ -316,6 +322,7 @@ const projects = [
     description: "Pixel Art Bitmap Editor",
     uri: "",
     techStack: [techs[21]],
+    pictures: ["src/assets/projects/took-one.png"],
   },
 ];
 

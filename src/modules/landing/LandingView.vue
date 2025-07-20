@@ -4,7 +4,7 @@ import MeSection from "./components/sections/MeSection.vue";
 import PersonalInfoSection from "./components/sections/PersonalInfoSection.vue";
 import ProjectsSection from "./components/sections/ProjectsSection.vue";
 import SkillsSection from "./components/sections/SkillsSection.vue";
-import TechSection from "./components/sections/TechSection.vue";
+//import TechSection from "./components/sections/TechSection.vue";
 </script>
 
 <template>

@@ -8,3 +8,8 @@ export type Tech = {
   icon?: Component | string;
   logo?: string;
 };
+
+export type ContactForm = {
+  subject?: string;
+  body: string;
+};
