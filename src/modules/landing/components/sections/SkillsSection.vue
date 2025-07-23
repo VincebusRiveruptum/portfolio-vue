@@ -36,17 +36,61 @@ import AppTechButton from "@/components/shared/AppTechButton.vue";
         </div>
 
         <div class="flex flex-row flex-wrap justify-center gap-4">
-          <AppTechButton size="xl" :tech="techs[8]" />
-          <AppTechButton size="xl" :tech="techs[9]" />
-          <AppTechButton size="xl" :tech="techs[14]" />
-          <AppTechButton size="xl" :tech="techs[10]" />
-          <AppTechButton size="xl" :tech="techs[3]" />
-          <AppTechButton size="xl" :tech="techs[25]" />
-          <AppTechButton size="xl" :tech="techs[2]" />
-          <AppTechButton size="xl" :tech="techs[26]" />
-          <AppTechButton size="xl" :tech="techs[0]" />
-          <AppTechButton size="xl" :tech="techs[24]" />
-          <AppTechButton size="xl" :tech="techs[6]" />
+          <AppTechButton
+            size="xl"
+            :tech="techs[8]"
+            class="intersect:motion-preset-slide-up motion-delay-50"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[9]"
+            class="intersect:motion-preset-slide-up motion-delay-150"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[14]"
+            class="intersect:motion-preset-slide-up motion-delay-250"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[10]"
+            class="intersect:motion-preset-slide-up motion-delay-300"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[3]"
+            class="intersect:motion-preset-slide-up motion-delay-450"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[25]"
+            class="intersect:motion-preset-slide-up motion-delay-500"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[2]"
+            class="intersect:motion-preset-slide-up motion-delay-700"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[26]"
+            class="intersect:motion-preset-slide-up motion-delay-780"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[0]"
+            class="intersect:motion-preset-slide-up motion-delay-890"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[24]"
+            class="intersect:motion-preset-slide-up motion-delay-1000"
+          />
+          <AppTechButton
+            size="xl"
+            :tech="techs[6]"
+            class="intersect:motion-preset-slide-up motion-delay-1100"
+          />
         </div>
       </div>
     </div>
