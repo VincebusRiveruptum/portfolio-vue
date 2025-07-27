@@ -34,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative flex flex-col h-screen overflow-clip">
+  <div class="relative flex flex-col h-screen overflow-clip bg-background">
     <AppNavbar
       :current-offset="y"
       :class="[

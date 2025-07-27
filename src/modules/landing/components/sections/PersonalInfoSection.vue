@@ -8,7 +8,7 @@ import {
 </script>
 
 <template>
-  <div class="flex flex-col gap-12 bg-white px-4 sm:py-[5%] sm:px-[15%]">
+  <div class="flex flex-col gap-12 bg-background px-4 sm:py-[5%] sm:px-[15%]">
     <h1>Personal information</h1>
 
     <div class="flex flex-col gap-18">

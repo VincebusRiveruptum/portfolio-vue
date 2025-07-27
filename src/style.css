@@ -18,9 +18,17 @@ html {
   @apply px-4 py-2 text-white antialiased rounded-full bg-rose-600 hover:brightness-105 hover:scale-105 hover:shadow-sm transition-all disabled:bg-rose-600/30 disabled:hover:scale-100;
 }
 
+.bg-background {
+  @apply bg-white dark:bg-gray-900 dark:text-white;
+}
+
+.bg-background-secondary {
+  @apply bg-white dark:bg-gray-800 dark:text-white;
+}
+
 input,
 textarea {
-  @apply border-1 rounded-lg antialiased border-black/50 p-2;
+  @apply border-1 rounded-lg antialiased border-black/50 p-2 dark:border-white/50;
 }
 
 textarea {
@@ -40,9 +48,15 @@ h3 {
 }
 
 h3 {
-  @apply text-lg font-bold antialiased text-black/50;
+  @apply text-lg font-bold antialiased text-black/50 dark:text-white;
 }
 
 ul li {
   @apply list-disc list-inside;
+}
+
+.center-shadow {
+  box-shadow: 0px 0px 46px 9px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 0px 0px 46px 9px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 0px 46px 9px rgba(0, 0, 0, 0.57);
 }

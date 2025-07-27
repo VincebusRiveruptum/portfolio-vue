@@ -16,7 +16,7 @@ const props = defineProps<{
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
     <div
-      class="rounded-xl shadow-xl w-[80%] aspect-square"
+      class="rounded-xl shadow-xl w-[80%] aspect-square dark:border-4 dark:border-white/50 dark:shadow-none"
       :class="[props.background]"
     >
       <img
@@ -27,7 +27,10 @@ const props = defineProps<{
 
     <div class="flex flex-col gap-4">
       <h2>{{ props.title }}</h2>
-      <div class="flex flex-row flex-wrap gap-4" v-if="techStack && techStack?.length > 0">
+      <div
+        class="flex flex-row flex-wrap gap-4"
+        v-if="techStack && techStack?.length > 0"
+      >
         <AppTechButton
           v-for="(tech, i) in techStack"
           :tech="tech"

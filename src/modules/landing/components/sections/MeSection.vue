@@ -6,11 +6,11 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 
 <template>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-gray-100 px-4 sm:py-[5%] sm:px-[15%]"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-background-secondary px-4 sm:py-[5%] sm:px-[15%]"
   >
     <div class="m-auto">
       <img
-        class="w-[80%] aspect-square drop-shadow-2xl rounded-xl"
+        class="w-[80%] aspect-square center-shadow rounded-xl"
         :src="myself"
         alt="yep thats me"
       />

@@ -7,7 +7,7 @@ const { form, isFormFilled, isPending, isSuccess, sendMessage } = useContact();
 
 <template>
   <div
-    class="flex flex-col gap-12 bg-white px-4 sm:py-[5%] sm:px-[15%] lg:px-[25%]"
+    class="flex flex-col gap-12 bg-background-secondary px-4 sm:py-[5%] sm:px-[15%] lg:px-[25%]"
   >
     <h1>Contact</h1>
 
