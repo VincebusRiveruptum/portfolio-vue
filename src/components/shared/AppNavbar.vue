@@ -72,7 +72,8 @@ const navLinks: NavLink[] = [
 ];
 
 const scrollUp = () => {
-  mainSection.value.scrollTo({ top: 0, behavior: "smooth" });
+  if (mainSection.value)
+    mainSection.value.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 onMounted(() => {
@@ -101,7 +102,7 @@ onMounted(() => {
       <div class="sm:hidden">
         <router-link
           v-if="route.name === 'landing-page'"
-          :to="navLinks[5].route"
+          :to="{...navLinks[5].route}"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
@@ -110,7 +111,7 @@ onMounted(() => {
 
         <router-link
           v-if="route.name === 'contact-view'"
-          :to="navLinks[1].route"
+          :to="{...navLinks[1].route}"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
