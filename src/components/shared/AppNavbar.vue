@@ -82,7 +82,7 @@ onMounted(() => {
 </script>
 <template>
   <div
-    class="relative flex flex-row bg-background items-center gap-4 justify-between h-[90px] shadow-xl py-2 px-[8%] dark:shadow-none"
+    class="relative flex flex-row bg-background items-center gap-4 justify-between h-[90px] shadow-center-sm py-2 px-[8%]"
   >
     <div class="flex flex-row">
       <img
@@ -102,7 +102,7 @@ onMounted(() => {
       <div class="sm:hidden">
         <router-link
           v-if="route.name === 'landing-page'"
-          :to="{...navLinks[5].route}"
+          :to="{ ...navLinks[5].route }"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
@@ -111,7 +111,7 @@ onMounted(() => {
 
         <router-link
           v-if="route.name === 'contact-view'"
-          :to="{...navLinks[1].route}"
+          :to="{ ...navLinks[1].route }"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >

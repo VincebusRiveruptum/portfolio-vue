@@ -10,7 +10,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
   >
     <div class="m-auto">
       <img
-        class="w-[80%] m-auto aspect-square center-shadow dark:shadow-none rounded-xl"
+        class="w-[80%] m-auto aspect-square shadow-2xl dark:shadow-center rounded-xl"
         :src="myself"
         alt="yep thats me"
       />
@@ -29,7 +29,9 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
           technical experience.
         </p>
       </div>
-      <div class="flex flex-row items-center justify-center sm:justify-start gap-8">
+      <div
+        class="flex flex-row items-center justify-center sm:justify-start gap-8"
+      >
         <a href="https://github.com/VincebusRiveruptum">
           <GithubIcon class="hover:scale-110 transition-all" />
         </a>
