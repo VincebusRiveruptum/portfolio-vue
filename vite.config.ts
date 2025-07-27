@@ -7,7 +7,7 @@ import vue from "@vitejs/plugin-vue";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-  base: "/portfolio-vue/",
+  base: "/portfolio/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

@@ -22,6 +22,11 @@ import vuequery from "@/assets/vuequery.png";
 import postman from "@/assets/postman.png";
 import mysql from "@/assets/mysql.svg";
 
+import passmedLogo from "@/assets/projects/passmed-logo.svg";
+import passmedLogoAlt from "@/assets/projects/passmed.png";
+import tetrisCapture from "@/assets/projects/tetris.png";
+import tookOneCapture from "@/assets/projects/took-one.png";
+
 const techs: Tech[] = [
   {
     id: 1,
@@ -288,6 +293,7 @@ const projects = [
     ],
   },
   */
+
   {
     title: "Passmed",
     status: 0,
@@ -295,10 +301,7 @@ const projects = [
     uri: "",
     techStack: [techs[14], techs[8], techs[3], techs[6]],
     background: "bg-[#00C6BE]",
-    pictures: [
-      "src/assets/projects/passmed-logo.svg",
-      "src/assets/projects/passmed.png",
-    ],
+    pictures: [passmedLogo, passmedLogoAlt],
   },
   {
     title: "Lupobenchmark",
@@ -313,7 +316,7 @@ const projects = [
     description: "Text-mode tetris for MS-DOS, just for experimental purposes!",
     uri: "",
     techStack: [techs[18], techs[19]],
-    pictures: ["src/assets/projects/tetris.png"],
+    pictures: [tetrisCapture],
   },
 
   {
@@ -322,7 +325,7 @@ const projects = [
     description: "Pixel Art Bitmap Editor",
     uri: "",
     techStack: [techs[21]],
-    pictures: ["src/assets/projects/took-one.png"],
+    pictures: [tookOneCapture],
   },
 ];
 
