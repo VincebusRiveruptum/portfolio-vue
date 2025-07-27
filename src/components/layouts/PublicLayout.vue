@@ -38,7 +38,7 @@ onMounted(() => {
     <AppNavbar
       :current-offset="y"
       :class="[
-        hideNavbar ? '-translate-y-2' : '',
+        hideNavbar ? 'sm:-translate-y-2' : '',
         'transition-all duration-500 delay-100 absolute z-25 top-0',
       ]"
     />

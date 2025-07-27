@@ -6,30 +6,30 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 
 <template>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-background-secondary px-4 sm:py-[5%] sm:px-[15%]"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
   >
     <div class="m-auto">
       <img
-        class="w-[80%] aspect-square center-shadow dark:shadow-none rounded-xl"
+        class="w-[80%] m-auto aspect-square center-shadow dark:shadow-none rounded-xl"
         :src="myself"
         alt="yep thats me"
       />
     </div>
 
     <div class="flex flex-col gap-8">
-      <h1>VICENTE RIVEROS GARAY</h1>
-      <div class="flex flex-row items-center gap-4">
+      <h1 class="text-center sm:text-left">VICENTE RIVEROS GARAY</h1>
+      <div class="flex flex-col sm:flex-row items-center gap-4">
         <img :src="cl" alt="Chile" class="w-8" />
         <h3>Full Stack Developer & IT Engineer</h3>
       </div>
-      <div>
+      <div class="text-center sm:text-left">
         <p>
           I'm a Full-stack developer from Chile with 1+ year experience in the
           field, a professional developer with a good set of problem solving and
           technical experience.
         </p>
       </div>
-      <div class="flex flex-row items-center gap-8">
+      <div class="flex flex-row items-center justify-center sm:justify-start gap-8">
         <a href="https://github.com/VincebusRiveruptum">
           <GithubIcon class="hover:scale-110 transition-all" />
         </a>
@@ -40,8 +40,8 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
         </a>
       </div>
 
-      <router-link :to="{ name: 'contact-view' }">
-        <button class="btn-primary">Contact me</button>
+      <router-link :to="{ name: 'contact-view' }" class="w-full">
+        <button class="btn-primary w-full">Contact me</button>
       </router-link>
     </div>
   </div>

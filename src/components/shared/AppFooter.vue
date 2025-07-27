@@ -9,7 +9,7 @@ const scrollTop = () => {
 
 <template>
   <div
-    class="flex flex-row justify-between gap-8 px-[4%] py-[2%] w-full h-[500px] bg-background-tertiary text-white"
+    class="flex flex-col items-center sm:flex-row sm:justify-between gap-8 p-8 sm:px-[4%] sm:py-[2%] w-full h-[500px] bg-background-tertiary text-white"
   >
     <div class="flex flex-row items-center gap-4">
       <img :src="logoWhite" alt="vincebus-logo" class="aspect-square w-20" />
@@ -17,7 +17,7 @@ const scrollTop = () => {
     </div>
 
     <div class="flex flex-row items-center">
-      <p>
+      <p class="text-center sm:text-left">
         (c) {{ new Date().getFullYear() }} - Vincebus Riveruptum, All rights
         reserved.
       </p>

@@ -7,12 +7,12 @@ const { form, isFormFilled, isPending, isSuccess, sendMessage } = useContact();
 
 <template>
   <div
-    class="flex flex-col gap-12 bg-background-secondary px-4 sm:py-[5%] sm:px-[15%] lg:px-[25%]"
+    class="flex flex-col gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%] lg:px-[25%]"
   >
     <h1>Contact</h1>
 
     <div class="flex flex-col gap-8">
-      <p>
+      <p class="text-center sm:text-left">
         If you're interested you can contact me directly by filling the form
         below.
       </p>
@@ -32,7 +32,7 @@ const { form, isFormFilled, isPending, isSuccess, sendMessage } = useContact();
           <textarea v-model="form.message" name="message"> </textarea>
         </div>
         <button
-          class="btn-primary sm:w-48 ml-auto"
+          class="btn-primary sm:w-48 ml-auto w-full"
           :disabled="!isFormFilled || isPending || isSuccess"
           type="button"
           @click="sendMessage()"

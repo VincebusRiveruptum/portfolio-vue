@@ -14,9 +14,9 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
     <div
-      class="rounded-xl shadow-xl w-[80%] aspect-square dark:border-4 dark:border-white/50 dark:shadow-none"
+      class="rounded-xl shadow-xl mx-auto w-[80%] aspect-square dark:border-4 dark:border-white/50 dark:shadow-none"
       :class="[props.background]"
     >
       <img
@@ -25,10 +25,10 @@ const props = defineProps<{
       />
     </div>
 
-    <div class="flex flex-col gap-4">
-      <h2>{{ props.title }}</h2>
+    <div class="flex flex-col gap-8">
+      <h2 class="text-center sm:text-left">{{ props.title }}</h2>
       <div
-        class="flex flex-row flex-wrap gap-4"
+        class="flex flex-row flex-wrap justify-center sm:justify-start gap-4"
         v-if="techStack && techStack?.length > 0"
       >
         <AppTechButton
@@ -37,7 +37,7 @@ const props = defineProps<{
           :key="i + '-tech'"
         />
       </div>
-      <p class="mt-8">{{ props.description }}</p>
+      <p class="text-center sm:text-left">{{ props.description }}</p>
     </div>
   </div>
 </template>

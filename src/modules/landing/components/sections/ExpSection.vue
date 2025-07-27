@@ -2,7 +2,7 @@
 import ExpItem from "@/modules/landing/components/ExpItem.vue";
 </script>
 <template>
-  <div class="flex flex-col bg-background gap-12 px-4 sm:py-[5%] sm:px-[15%]">
+  <div class="flex flex-col bg-background gap-12 p-12 sm:py-[5%] sm:px-[15%]">
     <h1>Experience</h1>
 
     <ExpItem

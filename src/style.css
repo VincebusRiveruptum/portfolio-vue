@@ -40,11 +40,11 @@ textarea {
 }
 
 h1 {
-  @apply text-4xl font-extrabold antialiased;
+  @apply text-4xl font-extrabold antialiased text-center sm:text-left;
 }
 
 h2 {
-  @apply text-2xl font-bold antialiased;
+  @apply text-2xl font-bold antialiased ;
 }
 
 h3 {

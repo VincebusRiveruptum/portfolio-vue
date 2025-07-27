@@ -8,7 +8,7 @@ import {
 </script>
 
 <template>
-  <div class="flex flex-col gap-12 bg-background px-4 sm:py-[5%] sm:px-[15%]">
+  <div class="flex flex-col gap-12 bg-background p-12 sm:py-[5%] sm:px-[15%]">
     <h1>Personal information</h1>
 
     <div class="flex flex-col gap-18">
@@ -27,7 +27,7 @@ import {
         </div>
       </div>
 
-      <div class="grid grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-8">
         <div class="flex flex-col gap-4">
           <LightbulbIcon />
           <h3>Generalist</h3>
