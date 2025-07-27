@@ -5,7 +5,7 @@ import placeholder from "@/assets/placeholder.svg";
 import AppTechButton from "@/components/shared/AppTechButton.vue";
 
 const props = defineProps<{
-  pictures?: Array;
+  pictures?: Array<any>;
   title: string;
   description: string;
   background?: string;
@@ -27,7 +27,7 @@ const props = defineProps<{
 
     <div class="flex flex-col gap-4">
       <h2>{{ props.title }}</h2>
-      <div class="flex flex-row flex-wrap gap-4" v-if="techStack?.length > 0">
+      <div class="flex flex-row flex-wrap gap-4" v-if="techStack && techStack?.length > 0">
         <AppTechButton
           v-for="(tech, i) in techStack"
           :tech="tech"

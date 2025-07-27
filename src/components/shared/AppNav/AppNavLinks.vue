@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { NavLink } from "@/types/global";
+import { type NavLink } from "@/types/global";
 import AppNavlink from "./AppNavlink.vue";
-import { ref, useTemplateRef, watch } from "vue";
+import { ref } from "vue";
 
 const props = defineProps<{
   links: NavLink[];
@@ -35,7 +35,6 @@ const setActive = (index: number) => {
     }
   });
 };
-
 </script>
 
 <template>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import { useRoute, type RouteRecordRaw } from "vue-router";
+import { useRoute } from "vue-router";
 
 const emit = defineEmits(["click"]);
 
 const props = defineProps<{
   type?: string;
   title?: string;
-  to: RouteRecordRaw;
+  to?: { name: string };
   active: boolean;
 }>();
 
@@ -20,7 +20,7 @@ const isCurrentRoute = computed(() => route.name === props.to?.name);
   <div class="text-center text-nowrap">
     <router-link
       v-if="(props.type === 'route' && props.to) || !isCurrentRoute"
-      :to="props.to"
+      :to="{ ...props.to }"
       class="hover:text-purple-600 font-semibold antialiased transition-all"
       :class="{ 'text-purple-500': props.active }"
       @click="$emit('click')"

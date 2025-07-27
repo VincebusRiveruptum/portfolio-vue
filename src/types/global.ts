@@ -1,5 +1,4 @@
 import type { Component } from "vue";
-import type { RouteRecordRaw } from "vue-router";
 
 export type Tech = {
   id: number;
@@ -13,7 +12,7 @@ export type Tech = {
 export type ContactForm = {
   email: string;
   subject: string;
-  body: string;
+  message: string;
 };
 
 export type NavLink = {
