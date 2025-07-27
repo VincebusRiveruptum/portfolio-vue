@@ -35,7 +35,6 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-col h-screen overflow-clip">
-    {{ y }}
     <AppNavbar
       :current-offset="y"
       :class="[
