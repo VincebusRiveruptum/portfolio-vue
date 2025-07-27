@@ -21,6 +21,8 @@ const useContact = () => {
 
   const isFormFilled = computed(
     () =>
+      form.value.email &&
+      form.value.email.trim() != "" &&
       form.value.subject &&
       form.value.subject.trim() != "" &&
       form.value.message &&

@@ -1,6 +1,69 @@
 <script setup lang="ts">
 import logo from "@/assets/logo.png";
-import AppNavlink from "@/components/shared/AppNavlink.vue";
+
+import AppNavLinks from "./AppNav/AppNavLinks.vue";
+import type { NavLink } from "../../types/global";
+
+const props = defineProps<{
+  currentOffset?: number;
+}>();
+
+const navLinks: NavLink[] = [
+  {
+    title: "Home",
+    name: "home",
+    type: "scroll",
+    route: {
+      name: "landing-page",
+    },
+    active: false,
+  },
+  {
+    title: "Personal Information",
+    name: "personal-info",
+    type: "scroll",
+    route: {
+      name: "landing-page",
+    },
+    active: false,
+  },
+  {
+    title: "Skills",
+    name: "skills",
+    type: "scroll",
+    route: {
+      name: "landing-page",
+    },
+    active: false,
+  },
+  {
+    title: "Experience",
+    name: "experience",
+    type: "scroll",
+    route: {
+      name: "landing-page",
+    },
+    active: false,
+  },
+  {
+    title: "Projects",
+    name: "projects",
+    type: "scroll",
+    route: {
+      name: "landing-page",
+    },
+    active: false,
+  },
+  {
+    title: "Contact",
+    name: "contact",
+    type: "route",
+    route: {
+      name: "contact-view",
+    },
+    active: false,
+  },
+];
 </script>
 <template>
   <div
@@ -11,24 +74,7 @@ import AppNavlink from "@/components/shared/AppNavlink.vue";
     </div>
 
     <div class="flex flex-row gap-8">
-      <AppNavlink title="Home" type="scroll" :to="{ name: 'landing-page' }" />
-      <AppNavlink
-        title="Personal Information"
-        type="scroll"
-        :to="{ name: 'landing-page' }"
-      />
-      <AppNavlink title="Skills" type="scroll" :to="{ name: 'landing-page' }" />
-      <AppNavlink
-        title="Experience"
-        type="scroll"
-        :to="{ name: 'landing-page' }"
-      />
-      <AppNavlink
-        title="Projects"
-        type="scroll"
-        :to="{ name: 'landing-page' }"
-      />
-      <AppNavlink title="Contact" type="route" :to="{ name: 'contact-view' }" />
+      <AppNavLinks :current-offset="props.currentOffset" :links="navLinks" />
     </div>
   </div>
 </template>

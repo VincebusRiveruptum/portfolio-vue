@@ -40,7 +40,9 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
         </a>
       </div>
 
-      <button class="btn-primary">Contact me</button>
+      <router-link :to="{ name: 'contact-view' }">
+        <button class="btn-primary">Contact me</button>
+      </router-link>
     </div>
   </div>
 </template>

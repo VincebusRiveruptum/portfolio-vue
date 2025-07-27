@@ -9,14 +9,14 @@ import SkillsSection from "./components/sections/SkillsSection.vue";
 
 <template>
   <div class="h-full flex flex-col">
-    <MeSection />
-    <PersonalInfoSection />
-    <SkillsSection />
+    <MeSection id="home"/>
+    <PersonalInfoSection  id="personal-info"/>
+    <SkillsSection id="skills" />
 
     <!--
     <TechSection />
     -->
-    <ExpSection />
-    <ProjectsSection />
+    <ExpSection id="experience"/>
+    <ProjectsSection id="projects"/>
   </div>
 </template>

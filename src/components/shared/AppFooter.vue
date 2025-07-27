@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import logoWhite from "@/assets/logo_white.png";
+
+const scrollTop = () => {
+  const mainSection = document.getElementById("main");
+  if (mainSection) mainSection.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -19,7 +24,9 @@ import logoWhite from "@/assets/logo_white.png";
     </div>
 
     <div class="flex flex-row items-center">
-      <a>Back to top</a>
+      <button class="hover:scale-105 transition-all" @click="scrollTop()">
+        Back to top
+      </button>
     </div>
   </div>
 </template>

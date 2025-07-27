@@ -9,7 +9,7 @@ import { onMounted, useTemplateRef, watch } from "vue";
 import { useScroll } from "@vueuse/core";
 
 const mainWindow = useTemplateRef<HTMLElement>("main");
-const { isScrolling } = useScroll(mainWindow);
+const { isScrolling, y } = useScroll(mainWindow);
 const hideNavbar = ref<boolean>(false);
 
 let timeout: ReturnType<typeof setTimeout> | null = null;
@@ -35,13 +35,15 @@ onMounted(() => {
 
 <template>
   <div class="relative flex flex-col h-screen overflow-clip">
+    {{ y }}
     <AppNavbar
+      :current-offset="y"
       :class="[
         hideNavbar ? '-translate-y-2' : '',
         'transition-all duration-500 delay-100 absolute z-25 top-0',
       ]"
     />
-    <div ref="main" class="flex flex-col h-full overflow-auto -mt-2">
+    <div id="main" ref="main" class="flex flex-col h-full overflow-auto -mt-2">
       <div class="grow">
         <router-view />
       </div>
