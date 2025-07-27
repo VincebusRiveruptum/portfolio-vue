@@ -10,7 +10,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
   >
     <div class="m-auto">
       <img
-        class="w-[80%] aspect-square center-shadow rounded-xl"
+        class="w-[80%] aspect-square center-shadow dark:shadow-none rounded-xl"
         :src="myself"
         alt="yep thats me"
       />

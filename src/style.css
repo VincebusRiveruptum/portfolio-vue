@@ -19,11 +19,15 @@ html {
 }
 
 .bg-background {
-  @apply bg-white dark:bg-gray-900 dark:text-white;
+  @apply bg-white dark:bg-neutral-900 dark:text-white;
 }
 
 .bg-background-secondary {
-  @apply bg-white dark:bg-gray-800 dark:text-white;
+  @apply bg-white dark:bg-neutral-800 dark:text-white;
+}
+
+.bg-background-tertiary {
+  @apply bg-slate-900 dark:bg-neutral-700 dark:text-white;
 }
 
 input,
